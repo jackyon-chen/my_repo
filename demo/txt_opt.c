@@ -24,9 +24,10 @@ int main(void)
         str[i] = ch;
         i++;
     }
-    //printf("str: %s\n",str);
+    printf("str: %s\n",str);
 	for(i=0;i<strlen(str);i++)
-		printf("str[%d]: %c\n",i,str[i]);
+		printf("str[%d]: %c %d 0x%.2X\n",i,str[i],str[i],str[i]);
+	//str[strlen(str)] = '\0';
     fclose(fp);
 
     return 0;
